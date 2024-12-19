@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merry Christmas 2024</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="wrapper relative z-1">
+      <section
+        id="scene1"
+        class="h-screen w-screen bg-[#BC0D0D] flex items-center justify-center text-5xl font-bold relative"
+      >
+        <div id="moon" class="flex items-center justify-center">
+          <img
+            src="./images/moon.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          id="tree3"
+          class="flex items-center justify-center w-full absolute bottom-0"
+        >
+          <img src="./images/tree3.png" alt="" class="w-full h-full" />
+        </div>
+        <div
+          id="tree2"
+          class="flex items-center justify-center w-full absolute bottom-0"
+        >
+          <img src="./images/tree2.png" alt="" class="w-full h-full" />
+        </div>
+        <div
+          id="tree1"
+          class="flex items-center justify-center w-full absolute bottom-0"
+        >
+          <img
+            src="./images/tree1.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+      <section
+        id="pre-loading"
+        class="pre-loading flex h-screen w-screen items-center justify-center bg-[#BC0D0D] absolute z-[2] overflow-hidden top-0 left-0 right-0"
+      >
+        <div class="relative flex h-full w-full">
+          <img
+            src="./images/bg-intro.png"
+            alt=""
+            class="h-full w-full object-cover"
+          />
+          <img
+            id="zoom-in"
+            src="./images/intro.png"
+            alt=""
+            class="intro-item"
+          />
+        </div>
+        <!-- <Snowfall /> -->
+      </section>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  </body>
+</html>
